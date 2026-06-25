@@ -12,9 +12,8 @@ body {
 }
 }
 .screen {
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(6px);
-  border-radius: 20px;
+  background: transparent;
+}
 }
 /* SCREEN */
 .screen {
