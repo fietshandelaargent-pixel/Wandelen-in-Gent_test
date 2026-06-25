@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,97 +7,45 @@
 
 body {
   background: #dfe5da;
-  color: #1d3557;
+  text-align: center;
 }
-}
-.screen {
-  background: transparent;
-}
-}
-/* SCREEN */
+
+/* schermen */
 .screen {
   display: none;
-  height: 100vh;
   padding: 20px;
-  animation: fadeIn 0.4s ease;
 }
 
 .screen.active {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
 }
 
-/* CONTENT */
-.content {
-  max-width: 420px;
-  margin: auto;
-  text-align: center;
-}
-padding: 20px;
-/* HERO */
-.hero {
-  width: 100%;
-  border-radius: 18px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* TYPO */
+/* titel */
 h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #0055A4; /* Gent blauw */
+  color: #1d3557;
   margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 1.8rem;
-}
-
-.subtitle {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-/* BUTTONS */
-.btn {
+/* knoppen */
+button, a {
   display: block;
-  width: 100%;
-  max-width: 420px;
+  margin: 12px auto;
   padding: 16px;
-  border-radius: 16px;
-  font-size: 1.2rem;
-  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;
+  font-size: 1.1rem;
+  border-radius: 12px;
   border: none;
+  background: #1d3557;
+  color: white;
   text-decoration: none;
 }
 
-.primary {
-  background: linear-gradient(135deg, #0055A4, #003f7d);
-  color: white;
-  font-weight: 600;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-.secondary {
-  background: white;
-  border: 2px solid #ddd;
-}
-
-.small {
-  font-size: 0.9rem;
-  padding: 10px;
-}
-
-/* CAMERA */
+/* camera */
 .camera-wrapper {
   position: relative;
   max-width: 500px;
   margin: auto;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 video {
@@ -112,122 +59,31 @@ video {
   width: 100%;
 }
 
-.top-gradient {
-  position: absolute;
-  top: 0;
+/* capture knop */
+#captureBtn {
+  width: 100px;
   height: 100px;
-  width: 100%;
-  background: linear-gradient(rgba(0,0,0,0.5), transparent);
-}
-
-.camera-hint {
-  position: absolute;
-  top: 12px;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 0.9rem;
-}
-
-/* CAPTURE BUTTON */
-.capture {
+  border-radius: 50%;
   background: white;
   border: 4px solid #1d3557;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  font-size: 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  margin: 20px auto;
+  margin-top: 20px;
   position: relative;
 }
-.capture::after {
+
+#captureBtn::after {
   content: '';
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   background: #1d3557;
   border-radius: 50%;
   position: absolute;
-  top: 15%;
-  left: 15%;
-}
-#switchCameraBtn {
-  font-size: 1rem;
-  padding: 14px;
+  top: 20%;
+  left: 20%;
 }
 
-/* CONTROLS */
-.controls {
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* RESULT */
+/* resultaat */
 #resultImage {
   width: 100%;
-  border-radius: 16px;
-  margin: 20px 0;
-}
-
-/* TEXT */
-.hint {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-.save-hint {
-  font-size: 0.8rem;
-  color: #777;
-  margin-top: 10px;
-}
-
-.share {
-  font-size: 1rem;
-  margin-top: 20px;
-}
-
-/* ANIMATION */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-body {
-  background: #dfe5da;
-}
-
-.screen {
-  background: transparent;
-}
-
-/* KNOPPEN */
-button {
-  background: #1d3557;
-  color: white;
-  padding: 16px;
-  border-radius: 12px;
-  border: none;
-}
-
-/* CAPTURE */
-#captureBtn {
-  background: white;
-  color: #1d3557;
-  border: 3px solid #1d3557;
-  font-weight: bold;
-}
-
-/* OVERLAY */
-#overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  max-width: 500px;
 }
 ``
