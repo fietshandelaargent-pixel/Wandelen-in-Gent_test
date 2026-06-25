@@ -1,0 +1,12 @@
+* {margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body {text-align:center;background:#fff}
+.screen {display:none;padding:20px}
+.screen.active {display:block}
+h1 {margin-bottom:10px}
+p {margin-bottom:20px}
+button,a {display:block;width:90%;max-width:400px;margin:10px auto;padding:15px;font-size:1.1rem;background:#00695c;color:#fff;border:none;border-radius:12px;text-decoration:none}
+.camera-wrapper {position:relative;max-width:500px;margin:auto}
+video {width:100%;border-radius:12px}
+#overlay {position:absolute;top:0;left:0;width:100%;pointer-events:none}
+#resultImage {width:100%;max-width:500px;border-radius:12px}
+.controls {margin-top:15px}
