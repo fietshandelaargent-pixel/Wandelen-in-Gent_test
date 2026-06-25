@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groetjes uit Gent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen" class="screen active">
+  <h1>Groetjes uit Gent</h1>
+  <p>Maak je eigen postkaart tijdens Verrassend Wandelen in Gent</p>
+  <button id="openCameraBtn">📷 Open camera</button>
+</div>
+
+<div id="cameraScreen" class="screen">
+  <div class="camera-wrapper">
+    <video id="video" autoplay playsinline></video>
+    <img id="overlay" src="" />
+  </div>
+
+  <div class="controls">
+    <button id="captureBtn">📸 Maak je postkaart</button>
+    <button id="switchCameraBtn">🔄 Wissel camera</button>
+  </div>
+</div>
+
+<div id="resultScreen" class="screen">
+  <img id="resultImage" alt="result">
+  <div class="controls">
+    <a id="downloadBtn" download="postkaart.png">📥 Bewaar postkaart</a>
+    <button id="retryBtn">📸 Maak nog een postkaart</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
