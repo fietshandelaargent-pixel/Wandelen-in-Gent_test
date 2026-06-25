@@ -7,16 +7,15 @@
 }
 
 body {
-  background: linear-gradient(#f6f3ec, #ffffff);
+  background: #f7f3eb;
   color: #1d3557;
 }
 
-/* SCREENS */
+/* SCREEN */
 .screen {
   display: none;
   height: 100vh;
   padding: 20px;
-  text-align: center;
   animation: fadeIn 0.4s ease;
 }
 
@@ -26,33 +25,66 @@ body {
   justify-content: center;
 }
 
-/* TYPO */
-h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #7c1515;
-  margin-bottom: 10px;
-}
-
-h2 {
-  margin-bottom: 15px;
-}
-
-.subtitle {
-  margin-bottom: 40px;
-  color: #555;
-}
-
 /* CONTENT */
 .content {
   max-width: 420px;
   margin: auto;
+  text-align: center;
 }
 
-.hint {
-  margin-top: 20px;
+/* HERO */
+.hero {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TYPO */
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0055A4; /* Gent blauw */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  margin: 10px auto;
+  border: none;
+  text-decoration: none;
+}
+
+.primary {
+  background: linear-gradient(135deg, #0055A4, #003f7d);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.secondary {
+  background: white;
+  border: 2px solid #ddd;
+}
+
+.small {
   font-size: 0.9rem;
-  color: #777;
+  padding: 10px;
 }
 
 /* CAMERA */
@@ -62,7 +94,7 @@ h2 {
   margin: auto;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 video {
@@ -76,58 +108,55 @@ video {
   width: 100%;
 }
 
+.top-gradient {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.5), transparent);
+}
+
 .camera-hint {
   position: absolute;
-  top: 10px;
+  top: 12px;
   width: 100%;
+  text-align: center;
   color: white;
   font-size: 0.9rem;
 }
 
-/* BUTTONS */
-button, a {
-  width: 100%;
-  max-width: 420px;
-  padding: 16px;
-  border-radius: 14px;
-  font-size: 1.2rem;
-  margin: 10px auto;
-  text-decoration: none;
-}
-
-.primary {
-  background: linear-gradient(135deg, #c1121f, #780000);
-  color: white;
-  font-weight: 600;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.secondary {
-  background: white;
-  color: #333;
-  border: 2px solid #ddd;
-}
-
 /* CAPTURE BUTTON */
 .capture {
-  background: linear-gradient(135deg, #e63946, #b5171e);
-  font-size: 1.4rem;
-  border-radius: 999px;
+  background: white;
+  color: black;
+  font-size: 2rem;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  margin-top: 10px;
 }
 
 /* CONTROLS */
 .controls {
   margin-top: 20px;
+  text-align: center;
 }
 
 /* RESULT */
 #resultImage {
   width: 100%;
-  border-radius: 14px;
-  margin-bottom: 20px;
+  border-radius: 16px;
+  margin: 20px 0;
 }
 
-/* TEXTS */
+/* TEXT */
+.hint {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
 .save-hint {
   font-size: 0.8rem;
   color: #777;
@@ -135,8 +164,8 @@ button, a {
 }
 
 .share {
-  margin-top: 20px;
   font-size: 1rem;
+  margin-top: 20px;
 }
 
 /* ANIMATION */
