@@ -198,3 +198,36 @@ video {
     transform: translateY(0);
   }
 }
+body {
+  background: #dfe5da;
+}
+
+.screen {
+  background: transparent;
+}
+
+/* KNOPPEN */
+button {
+  background: #1d3557;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* CAPTURE */
+#captureBtn {
+  background: white;
+  color: #1d3557;
+  border: 3px solid #1d3557;
+  font-weight: bold;
+}
+
+/* OVERLAY */
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+``
