@@ -2,6 +2,10 @@ const CONFIG={overlayPath:'./assets/postcard-overlay.png',useFrontCamera:true,ou
 const startScreen=document.getElementById('startScreen');
 const cameraScreen=document.getElementById('cameraScreen');
 const resultScreen=document.getElementById('resultScreen');
+<p style="margin-top:15px;">
+📸 Deel jouw postkaart met <strong>#maandvandevoetganger</strong>
+</p>
+``
 const openCameraBtn=document.getElementById('openCameraBtn');
 const captureBtn=document.getElementById('captureBtn');
 const switchCameraBtn=document.getElementById('switchCameraBtn');
