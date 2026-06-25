@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Groetjes uit Gent</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,38 +14,46 @@
 <!-- START -->
 <div id="startScreen" class="screen active">
   <div class="content">
+
+    <img src="./assets/start.jpg" class="hero">
+
     <h1>Groetjes uit Gent</h1>
     <p class="subtitle">
       Ontdek de stad en maak jouw eigen postkaart
     </p>
 
-    <button id="openCameraBtn" class="primary">
+    <button id="openCameraBtn" class="btn primary">
       📸 Maak jouw postkaart
     </button>
 
     <p class="hint">Scan. Maak. Bewaar.</p>
+
   </div>
 </div>
 
 <!-- CAMERA -->
 <div id="cameraScreen" class="screen">
+
   <div class="camera-wrapper">
-
     <video id="video" autoplay playsinline></video>
-    <img id="overlay" src="" />
+    <img id="overlay">
+    <div class="top-gradient"></div>
 
-    <p class="camera-hint">📸 Zet jezelf of je omgeving in beeld</p>
-
+    <p class="camera-hint">
+      Zet jezelf of je omgeving in beeld
+    </p>
   </div>
 
   <div class="controls">
-    <button id="captureBtn" class="capture">
-      📸 Maak postkaart
+
+    <button id="captureBtn" class="btn capture">
+      ●
     </button>
 
-    <button id="switchCameraBtn" class="secondary">
-      🔄 Wissel camera
+    <button id="switchCameraBtn" class="btn secondary small">
+      Wissel camera
     </button>
+
   </div>
 </div>
 
@@ -54,26 +61,28 @@
 <div id="resultScreen" class="screen">
 
   <div class="content">
-    <h2>🎉 Jouw postkaart</h2>
+
+    <h2>🎉 Mooi!</h2>
+    <p class="subtitle">Jouw postkaart uit Gent</p>
 
     <img id="resultImage">
 
     <div class="controls">
-      <a id="downloadBtn" class="primary" download="postkaart.png">
-        📥 Bewaar postkaart
+      <a id="downloadBtn" class="btn primary">
+        Bewaar jouw postkaart
       </a>
 
-      <button id="retryBtn" class="secondary">
-        📸 Maak nog één
+      <button id="retryBtn" class="btn secondary">
+        Maak nog een
       </button>
     </div>
 
     <p class="save-hint">
-      👉 Houd de afbeelding ingedrukt om op te slaan
+      Houd de afbeelding ingedrukt om op te slaan
     </p>
 
     <p class="share">
-      📸 Deel jouw Gent-moment<br>
+      Deel jouw moment<br>
       <strong>#maandvandevoetganger</strong>
     </p>
 
